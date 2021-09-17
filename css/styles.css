@@ -11,4 +11,146 @@
   .logo > img {
     width: 50px;
   }
-  
+
+  /*
+  width
+  mobile: 0 px - 480px
+  Tablets: 481px - 1023px
+  */
+
+header{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  flex: 1;
+  justify-content:flex-end;
+  color: white;
+}
+
+li{
+  list-style: none;
+  margin: 0px 10px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 0px 10%;
+  text-align: justify;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-right: 10%;
+}
+
+  @media only screen and (min-width: 481px)/*and (max-width: 1023px)*/{
+    body{
+      background-color: palegreen;
+    }
+    header{
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .logo{
+      margin-right: 10%;
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: justify;
+    }
+    .social{
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: space-around;
+      align-content: center;
+    }
+  }
+
+  @media only screen and (min-width: 1024px){
+    body{
+      background-color: paleturquoise;
+    }
+    main{
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: center;
+    }
+    .product{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin: 0px 20px;
+    }
+    header{
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .menu{
+      display: flex;
+      flex-direction: row;
+      background-color: gray;
+      flex: 1;
+      justify-content:flex-end;
+      color: white;
+      height: 0%;
+    }
+  }
